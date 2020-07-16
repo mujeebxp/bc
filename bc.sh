@@ -45,30 +45,8 @@ exit
 fi
 
 if [ "${userinput1:-}" = "5" ]
-echo " "
-clear
-if [ -d $cd /sdcard/T-backup ]; then
-clear
+then
 cd $HOME
-bash bc.sh
-else
-cd $HOME
-cd ..
-cd usr
-cd etc
-cp bash.bashrc $HOME
-cd $HOME
-cp bc.sh $HOME
-cd $HOME
-mkdir T-backup
-cp -r * T-backup
-cd T-backup
-rm -rf T-backup
-cd $HOME
-rm bc.sh bash.bashrc
-cd $HOME
-cd /sdcard/T-backup
-rm -rf bc.sh
-cd $HOME
-rm -rf bc.sh
+cd bc
+bash tt.sh
 fi
